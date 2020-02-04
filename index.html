@@ -13,6 +13,29 @@
 </head>
 
 <body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12"> <span id="zookeeper-name"></span>'s Zoo </div>
+      <div class="col-12">Bank: $<span id="zookeeper-bank"></span></div>
+      <div class="col-12">
+        <button type="button" class="btn btn-success" onclick="app.gameController.sellTicket()">Open the Zoo</button>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <button type="button" class="btn btn-info" onclick="app.gameController.buyMonkey()">Buy Monkey <br> Cost: $<span
+            id="monkey-price">200</span></button>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,7 +48,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="./app.js"></script>
+  <script src="./app/main.js" type="module"></script>
 </body>
 
 </html>
