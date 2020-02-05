@@ -75,7 +75,6 @@ export default class GameServices {
   }
 
   get ZooKeeper() {
-    // return new ZooKeeper(_player.name, _player.bank, _player.animals)
     return _player
   }
 }
