@@ -20,6 +20,7 @@
       <div class="col-12">
         <button type="button" class="btn btn-success" onclick="app.gameController.sellTicket()">Open the Zoo</button>
       </div>
+      <div class="col-12">Ticket Cost: $<span id="ticket-cost"></span></div>
     </div>
   </header>
   <main class="container-fluid">
@@ -27,6 +28,10 @@
       <div class="col-12 col-md-4">
         <button type="button" class="btn btn-info" onclick="app.gameController.buyMonkey()">Buy Monkey <br> Cost: $<span
             id="monkey-price">200</span></button>
+      </div>
+      <div class="col-12 col-md-4">
+        <button type="button" class="btn btn-info" onclick="app.gameController.buyGiraffe()">Buy Giraffe <br> Cost:
+          $<span id="giraffe-price">400</span></button>
       </div>
     </div>
   </main>

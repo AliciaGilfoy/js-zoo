@@ -28,16 +28,24 @@ export default class GameController {
   constructor() {
     getName()
     draw()
+    _gameService.addMods()
     console.log("The controller works")
   }
   sellTicket() {
     _gameService.sellTicket()
+    _gameService.addMods()
   }
   buyMonkey() {
     _gameService.buyMonkey()
+    _gameService.addMods()
     draw()
   }
 
+  buyGiraffe() {
+    _gameService.buyGiraffe()
+    _gameService.addMods()
+    draw()
+  }
   getName() {
     console.log(zooKeeper.name)
   }
